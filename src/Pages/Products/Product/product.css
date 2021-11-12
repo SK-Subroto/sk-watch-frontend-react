@@ -1,0 +1,7 @@
+.product-card{
+    border: 2px solid #ffff !important;
+    border-bottom: 2px solid #A99577 !important;
+}
+.product-card:hover{
+    border: 2px solid #A99577 !important;
+}

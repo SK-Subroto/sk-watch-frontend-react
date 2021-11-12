@@ -1,0 +1,15 @@
+.product-main-img{
+    height: 365px;
+    margin: 0 auto;
+}
+.purchase-btn{
+    color: #A99577;
+    border: #A99577 1px solid;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.purchase-btn:hover{
+    background-color: #A99577;
+    color: #ffff;
+    border: #A99577 1px solid;
+}

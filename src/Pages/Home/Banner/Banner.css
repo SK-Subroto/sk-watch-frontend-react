@@ -1,0 +1,42 @@
+.home-img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0564/2705/3216/files/slider-1.jpg?v=1633414416');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-indicators{
+    display: none;
+}
+.header-title-secondary{
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+.header-title-primary{
+    font-size: 90px;
+    font-family: 'Playfair Display', serif;
+}
+.header-button{
+    color: #ffff;
+    border: #A99577 1px solid;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.header-button:hover{
+    background-color: #A99577;
+    color: #ffff;
+    border: #A99577 1px solid;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .header-title-primary{
+        font-size: 60px;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and 
+(max-width: 992px) {
+    
+}
