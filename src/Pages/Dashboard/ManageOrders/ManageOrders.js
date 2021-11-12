@@ -21,7 +21,7 @@ const ManageOrders = () => {
         findOrder = orders.find(product => product._id === id)
         swal({
             title: "Are you sure?",
-            text: `You want to make status ${!findOrder.status ? "Sheeped" : "Pending"}`,
+            text: `You want to make status ${!findOrder.status ? "Shipped" : "Pending"}`,
             icon: "warning",
             buttons: true,
             dangerMode: true,
@@ -109,7 +109,7 @@ const ManageOrders = () => {
                                                 <td>{product.address}</td>
                                                 <td>${product.price}</td>
                                                 <td>{product.date}</td>
-                                                <td><span className={!product.status ? "text-warning fw-bold" : "text-success fw-bold"}>{!product.status ? "Pending" : "Sheeped"}</span></td>
+                                                <td><span className={!product.status ? "text-warning fw-bold" : "text-success fw-bold"}>{!product.status ? "Pending" : "Shipped"}</span></td>
                                                 <td 
                                                     onClick={() => handleUpdateStatus(product._id)} 
                                                     style={{ cursor: 'pointer' }}

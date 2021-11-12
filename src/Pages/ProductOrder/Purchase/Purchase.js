@@ -62,7 +62,7 @@ const Purchase = ({ id }) => {
         <>
             {loading ?
                 <div className="d-flex align-items-center justify-content-center" style={{ height: '80vh' }}>
-                    <ReactLoading type={"spinningBubbles"} color={"#7ea0ff"} height={100} width={100} />
+                    <ReactLoading type={"spinningBubbles"} color={"#A99577"} height={100} width={100} />
                 </div>
                 :
                 <Container style={{ minHeight: '80vh' }}>
@@ -72,8 +72,8 @@ const Purchase = ({ id }) => {
                             <Row lg={4} className="g-3">
                                 <Col><div className="border border-1"><img className="img-fluid" style={{ transform: 'rotate(90deg)' }} src={product.img} alt="" /></div></Col>
                                 <Col><div className="border border-1"><img className="img-fluid" src={product.img} alt="" /></div></Col>
-                                <Col><div className="border border-1"><img className="img-fluid" style={{ transform: 'skewY(20deg)' }} src={product.img} alt="" /></div></Col>
                                 <Col><div className="border border-1"><img className="img-fluid" src={product.img} alt="" /></div></Col>
+                                <Col><div className="border border-1"><img className="img-fluid" style={{ transform: 'rotate(90deg)' }} src={product.img} alt="" /></div></Col>
                             </Row>
                         </Col>
                         <Col>
@@ -90,15 +90,23 @@ const Purchase = ({ id }) => {
                                     <tbody>
                                         <tr >
                                             <td className="fw-bold">Price:</td>
-                                            <td>{product.price}</td>
+                                            <td className="fs-5">${product.price}</td>
                                         </tr>
                                         <tr >
                                             <td className="fw-bold">Size:</td>
-                                            <td>24mm 28mm 32m</td>
+                                            <td>
+                                                <span className="border border-2 me-2 fw-light p-1">24mm</span>
+                                                <span className="border border-2 me-2 fw-light p-1">28mm</span>
+                                                <span className="border border-2 me-2 fw-light p-1">32mm</span>
+                                            </td>
                                         </tr>
                                         <tr >
                                             <td className="fw-bold">Color:</td>
-                                            <td>brown black blue</td>
+                                            <td class="d-flex">
+                                                <div className="border border-2 me-2 fw-light p-1" style={{ borderRadius: '50%', height: '20px', width: '20px', backgroundColor: '#DAB05F' }}></div>
+                                                <div className="border border-2 me-2 fw-light p-1" style={{ borderRadius: '50%', height: '20px', width: '20px', backgroundColor: 'silver' }}></div>
+                                                <div className="border border-2 me-2 fw-light p-1" style={{ borderRadius: '50%', height: '20px', width: '20px', backgroundColor: '#2C2D2A' }}></div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </Table>

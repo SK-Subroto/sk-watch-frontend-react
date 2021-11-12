@@ -59,7 +59,7 @@ const Review = () => {
                 <p className="secondary-color fw-light">WHAT CUSTOMER SAY ABOUT US</p>
                 <h1 className="" style={{ fontWeight: 900 }}> <span className="primary-color">CUSTOMER </span>REVIEW</h1>
             </div>
-            <Slider {...settings} style={{ padding: '5%'  }}>
+            <Slider {...settings}>
                 {
                     reviews.map(r => {
                         return (

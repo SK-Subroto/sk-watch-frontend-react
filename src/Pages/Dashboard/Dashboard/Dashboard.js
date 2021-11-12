@@ -60,7 +60,7 @@ const Dashboard = () => {
                 toggled={toggled}
                 breakPoint="md"
                 onToggle={handleToggleSidebar}
-                style={{ 'height': 'auto' }}
+                style={{ height: '102vh' }}
             >
                 <SidebarHeader>
                     <div

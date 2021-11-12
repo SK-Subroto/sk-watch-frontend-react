@@ -71,7 +71,7 @@ const AddProduct = () => {
 
                     <Form.Group className="mb-3" controlId="exampleForm.ControlDescription">
                         <Form.Label>Description</Form.Label>
-                        <Form.Control name="Description" onBlur={handleOnBlur} as="textarea" rows={3} />
+                        <Form.Control name="description" onBlur={handleOnBlur} as="textarea" rows={3} />
                     </Form.Group>
 
                     <Button variant="primary" type="submit">

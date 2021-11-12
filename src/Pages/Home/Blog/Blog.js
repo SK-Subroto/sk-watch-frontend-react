@@ -16,12 +16,12 @@ const Blog = () => {
                     <Card>
                         <Card.Img variant="top" className="zoom" src="https://cdn.shopify.com/s/files/1/1692/8885/articles/blog4.jpg?v=1485167450" />
                         <Card.Body>
-                            <div className="fw-light mb-2">By Ram M | January 23, 2017 | 2 Comments</div>
+                            <div className="fw-light mb-2">By Richad | October 23, 2021 | 2 Comments</div>
                             <Card.Title className="fw-bold primary-color">CREATORS OF THE MAN MADE WATCHES</Card.Title>
                             <Card.Text>
                                 <div className="text-secondary">
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.
+                                    We’re mad about style, mad about gear, and today we’re mad about watch.
+                                    A good watch isn’t just an extension of style; it’s an extension of you.
                                 </div>
                                 <div className="primary-color mt-2">
                                     <BsFillTagFill /> Casio, Rolex
@@ -37,12 +37,12 @@ const Blog = () => {
                     <Card>
                         <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/1692/8885/articles/blog12.jpg?v=1485168301" />
                         <Card.Body>
-                            <div className="fw-light mb-2">By Ram M | January 23, 2017 | 2 Comments</div>
+                            <div className="fw-light mb-2">By Bekar | November 6, 2021 | 5 Comments</div>
                             <Card.Title className="fw-bold primary-color">A LUBRICANT-FREE WATCH FOR PERFECT MEN</Card.Title>
                             <Card.Text>
                                 <div className="text-secondary">
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.
+                                    a watch that runs without a drop of lubricant. For as long as clocks and watches have been made, 
+                                    oils have been essential to lubricate.
                                 </div>
                                 <div className="primary-color mt-2">
                                     <BsFillTagFill /> Casio, Titanic
@@ -58,12 +58,12 @@ const Blog = () => {
                     <Card>
                         <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/1692/8885/articles/blog10_518c7ab0-ce3f-4092-a34a-be939cb0b851.jpg?v=1485167950" />
                         <Card.Body>
-                            <div className="fw-light mb-2">By Ram M | January 23, 2017 | 2 Comments</div>
+                            <div className="fw-light mb-2">By Ram M | November 2, 2021 | 2 Comments</div>
                             <Card.Title className="fw-bold primary-color">MODERN DIGITAL JUMP-SECONDS DISPLAY</Card.Title>
                             <Card.Text>
                                 <div className="text-secondary">
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.
+                                    Nearly eight years, to be exact, back at a time when the Black-Eyed
+                                     Peas were still topping the charts and the Vagabondage II was turning signature.
                                 </div>
                                 <div className="primary-color mt-2">
                                     <BsFillTagFill /> Rolex, Titanic
