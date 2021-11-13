@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import login from '../../../images/login.png'
 import { Link, NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
@@ -9,8 +9,12 @@ import ReactLoading from 'react-loading';
 const Register = () => {
     const [loginData, setLoginData] = useState({});
 
-    const { user, registerUser, isLoading, authError } = useAuth();
+    const { user, registerUser, isLoading, authError, setAuthError } = useAuth();
     const history = useHistory();
+
+    useEffect(() => {
+        setAuthError('');
+    }, []);
 
     const handleOnBlur = e => {
         const field = e.target.name;
@@ -20,13 +24,13 @@ const Register = () => {
         setLoginData(newLoginData);
     }
     const handleRegisterSubmit = e => {
+        e.preventDefault();
         if (loginData.password !== loginData.password2) {
-            alert('Your password did not match');
+            setAuthError('Your password did not match');
             return
         }else{
             registerUser(loginData.email, loginData.password, loginData.name, history);
         }
-        e.preventDefault();
     }
 
     return (
@@ -69,8 +73,8 @@ const Register = () => {
                     {isLoading && <div className="d-flex align-items-center justify-content-center">
                         <ReactLoading type={"spokes"} color={"#A99577"} height={100} width={100} />
                     </div>}
-                    {user?.email && <h4 severity="success">User Created successfully!</h4>}
-                    {authError && <h4 severity="error">{authError}</h4>}
+                    {user?.email && <p className="text-center text-success">User Created successfully!</p>}
+                    {authError && <p className="text-center text-danger">{authError}</p>}
                 </div>
             </div>
         </Container>

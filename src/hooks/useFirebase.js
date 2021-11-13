@@ -7,7 +7,6 @@ import {
     signInWithPopup, GoogleAuthProvider
 } from "firebase/auth";
 import axios from "axios";
-import { useHistory } from "react-router";
 
 
 // initialize firebase app
@@ -123,6 +122,7 @@ const useFirebase = () => {
         user,
         isLoading,
         authError,
+        setAuthError,
         token,
         admin,
         registerUser,

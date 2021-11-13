@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation, useHistory, Link  } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { Container, Form, Button } from 'react-bootstrap';
@@ -7,10 +7,14 @@ import './Login.css'
 const Login = () => {
     const [loginData, setLoginData] = useState({});
 
-    const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
+    const { user, loginUser, signInWithGoogle, isLoading, authError, setAuthError } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
+
+    useEffect(() => {
+        setAuthError('');
+    }, []);
 
     const handleOnChange = e => {
         const field = e.target.name;
@@ -68,7 +72,7 @@ const Login = () => {
                             </Button>
                         </div>
                     </Form>
-                    <p className="text-danger">{authError}</p>
+                    <p className="text-center text-danger">{authError}</p>
                 </div>
             </div>
         </Container>
