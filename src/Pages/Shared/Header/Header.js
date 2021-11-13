@@ -54,7 +54,7 @@ const Header = () => {
                         <Nav className="ms-auto d-flex align-items-center fw-bold primary-color" style={{ fontSize: 18 }}>
                             <Nav.Link as={NavLink} activeStyle={activeStyle} to="/home">Home</Nav.Link>
                             <Nav.Link as={NavLink} activeStyle={activeStyle} to="/products">Products</Nav.Link>
-                            <Nav.Link as={NavLink} activeStyle={activeStyle} to="/dashboard">Dashboard</Nav.Link>
+                            {user?.email && <Nav.Link as={NavLink} activeStyle={activeStyle} to="/dashboard">Dashboard</Nav.Link>}
                             <Nav.Link as={NavLink} activeStyle={activeStyle} to="/about">About</Nav.Link>
                             {/* toggle loging logout  */}
                             {!user?.email ?

@@ -130,7 +130,7 @@ const Purchase = ({ id }) => {
                                         <Form.Control name="address" onChange={handleOnBlur} type="text" placeholder="Address" />
                                     </Form.Group>
                                     <Button variant="light" className="purchase-btn" type="submit">
-                                        Purchase
+                                        Place Order
                                     </Button>
                                 </Form>
                             </div>
