@@ -13,6 +13,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
+        // get feature product 
         axios.get('https://sks-watch.herokuapp.com/products')
             .then(res => setFeaturedProducts(res.data.products))
             .then(() => setLoading(false))

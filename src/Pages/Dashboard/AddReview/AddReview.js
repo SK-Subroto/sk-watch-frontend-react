@@ -65,7 +65,7 @@ const AddReview = () => {
 
                     <Form.Group className="mb-3" controlId="formGridRating">
                         <Form.Label>Rating</Form.Label>
-                        <Form.Control name="rating" onBlur={handleOnBlur} type="number" step="0.1" placeholder="0" />
+                        <Form.Control name="rating" onBlur={handleOnBlur} type="number" step="0.1" placeholder="0 to 5" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="exampleForm.ControlComment">

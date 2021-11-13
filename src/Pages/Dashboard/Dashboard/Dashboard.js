@@ -9,12 +9,11 @@ import {
     SidebarFooter,
     SidebarContent,
 } from 'react-pro-sidebar';
-import { FaUserTie, FaHeart, FaBars } from 'react-icons/fa';
+import { FaUserTie, FaBars } from 'react-icons/fa';
 import { BsStarFill, BsCreditCard2BackFill, BsFillHouseFill,
          BsFillCartFill, BsFillInboxesFill, BsFillGearFill } from "react-icons/bs";
 import { BsPower } from 'react-icons/bs';
-import sidebarBg from '../../../images/bg2.jpg';
-import { Route, Switch, useRouteMatch } from 'react-router';
+import { Route, Switch, useHistory, useRouteMatch } from 'react-router';
 import MyOrders from '../MyOrders/MyOrders';
 import Payment from '../Payment/Payment';
 import Review from '../AddReview/AddReview';
@@ -30,9 +29,9 @@ import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 import PrivateRoute from '../../Login/PrivateRoute/PrivateRoute';
 
 const Dashboard = () => {
+    const history = useHistory();
     let { path, url } = useRouteMatch();
     const [collapsed, setCollapsed] = useState(false);
-    const [image, setImage] = useState(true);
     const [toggled, setToggled] = useState(false);
     const { user, admin, logout } = useAuth();
 
@@ -45,17 +44,17 @@ const Dashboard = () => {
         setCollapsed(checked);
     };
 
-    const handleImageChange = (checked) => {
-        setImage(checked);
-    };
-
     const handleToggleSidebar = (value) => {
         setToggled(value);
     };
+
+    const signOut = () => {
+        history.push('/home')
+        logout();
+    }
     return (
         <div className={`app d-flex ${toggled ? 'toggled' : ''}`}>
             <ProSidebar
-                // image={image ? sidebarBg : false}
                 collapsed={collapsed}
                 toggled={toggled}
                 breakPoint="md"
@@ -82,7 +81,7 @@ const Dashboard = () => {
 
                 <SidebarContent>
                     <Menu iconShape="circle">
-                        {/* <MenuItem icon={<FaTachometerAlt />}> <NavLink activeStyle={activeStyle} to={`${url}`}>Home</NavLink></MenuItem> */}
+                        
                         <MenuItem icon={<BsFillHouseFill />}> <NavLink activeStyle={activeStyle} to={'/home'}>Home</NavLink></MenuItem>
                         {!admin ? 
                             (
@@ -111,7 +110,7 @@ const Dashboard = () => {
                             padding: '40px 24px',
                         }}
                     >
-                        <Button variant="danger" onClick={logout}><BsPower /> Logout</Button>
+                        <Button variant="danger" onClick={signOut}><BsPower /> Logout</Button>
                     </div>
                 </SidebarFooter>
             </ProSidebar>

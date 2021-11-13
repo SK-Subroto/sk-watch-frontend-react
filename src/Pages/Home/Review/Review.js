@@ -71,7 +71,7 @@ const Review = () => {
                                         <Card.Text>
                                             <StarRatings
                                                 rating={parseFloat(r.rating)}
-                                                starRatedColor="#CBBA9C"
+                                                starRatedColor="goldenrod"
                                                 starDimension="20px"
                                                 starSpacing="2px"
                                             />

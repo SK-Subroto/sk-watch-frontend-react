@@ -11,7 +11,7 @@ const Banner = () => {
     }
     return (
         <Container fluid>
-            <div className="home-img">
+            <div className="row home-img">
                 <div>
                     <Row>
                         <Col lg="6" className="d-flex align-items-center justify-content-center" style={{ height: '100vh' }}>

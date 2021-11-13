@@ -7,7 +7,7 @@ import skLogo from '../../../images/sk-watch-logo.png';
 const Footer = () => {
     return (
         <Container fluid className="mt-5 pt-5">
-            <div className="footer-container text-white px-lg-5 pt-5" >
+            <div className="row footer-container text-white px-lg-5 pt-5" >
                 <Row>
                     <Col lg="5" xs="12">
                         <div className="px-3">
@@ -15,8 +15,8 @@ const Footer = () => {
                                 <img style={{ height: 50 }} src={skLogo} alt="" />
                                 <h3 className="primary-color">SK Watch</h3>
                             </div>
-                            <p className="text-secondary fs-6">Land behold it created good saw after she'd Our set living.
-                                Signs midst dominion creepeth morning laboris nisi ufsit aliquip.</p>
+                            <p className="text-secondary fs-6">Everyone looks at your watch and it represents who you are,
+                                your values and your personal style. <span className="fst-italic"> ~ Kobe Bryant</span></p>
                             <div className="fs-3">
                                 <BsFacebook className="me-3" />
                                 <BsTwitter className="me-3" />

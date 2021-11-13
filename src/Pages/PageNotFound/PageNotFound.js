@@ -15,7 +15,7 @@ const PageNotFound = () => {
             <div className="page-not-found-container">
                 <h2>Page Not Found</h2>
                 <h1 style={{fontSize: '8rem'}}>404</h1>
-                <Button variant="primary" className="primary-background" onClick={handleGoHome}> <BsFillHouseDoorFill className="mb-1" /> Go to homepage</Button>
+                <Button variant="light" className="primary-background" onClick={handleGoHome}> <BsFillHouseDoorFill className="mb-1" /> Go to homepage</Button>
             </div>
         </Container>
     );

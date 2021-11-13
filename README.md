@@ -1,5 +1,7 @@
 # SK Watch
 
+That is fontend code. Technology use: React, Firebase, axios etc.
+
 ## Live link:
 
 https://sk-watch.web.app/

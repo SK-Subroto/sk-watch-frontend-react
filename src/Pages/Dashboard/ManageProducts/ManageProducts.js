@@ -61,7 +61,6 @@ const ManageProducts = () => {
                                     <th>Made By</th>
                                     <th>Rating</th>
                                     <th>Price</th>
-                                    {/* <th>Description</th> */}
                                     <th colSpan="2">Action</th>
                                 </tr>
                             </thead>

@@ -44,9 +44,8 @@ const AllProducts = () => {
                 </div>
                 :
                 <Container fluid>
-                    <div className="products-cover-img">
+                    <div className="row products-cover-img">
                         <div className="text-center mt-5 pt-5 mb-3">
-                            {/* <p className="secondary-color">360° COLLECTION</p> */}
                             <h1 className="title text-white" style={{ fontWeight: '700', fontFamily: 'Playfair Display' }}>Limited Edition Watches</h1>
                         </div>
                     </div>

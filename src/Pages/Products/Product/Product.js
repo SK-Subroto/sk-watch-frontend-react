@@ -13,7 +13,7 @@ const Product = (props) => {
     }
     return (
         <Col>
-            <Card className="border-0 h-100 product-card p-2">
+            <Card className="border-0 h-100 product-card shadow-sm p-2">
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title className="text-center">{model}</Card.Title>

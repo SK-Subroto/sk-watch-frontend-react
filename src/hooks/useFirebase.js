@@ -7,6 +7,7 @@ import {
     signInWithPopup, GoogleAuthProvider
 } from "firebase/auth";
 import axios from "axios";
+import { useHistory } from "react-router";
 
 
 // initialize firebase app
@@ -77,10 +78,10 @@ const useFirebase = () => {
     // observer user state
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, (user) => {
-            setIsLoading(true); /////
+            setIsLoading(true);
             if (user) {
                 setUser(user);
-                ////////
+                // set Admin
                 fetch(`https://sks-watch.herokuapp.com/users/${user.email}`)
                     .then(res => res.json())
                     .then(data => setAdmin(data.admin))
@@ -98,12 +99,6 @@ const useFirebase = () => {
         return () => unsubscribed;
     }, [])
 
-    // set Admin
-    // useEffect(() => {
-    //     fetch(`https://sks-watch.herokuapp.com/users/${user.email}`)
-    //         .then(res => res.json())
-    //         .then(data => setAdmin(data.admin))
-    // }, [user.email])
 
     const logout = () => {
         setIsLoading(true);

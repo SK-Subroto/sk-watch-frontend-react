@@ -19,8 +19,8 @@ const About = () => {
                             <Button variant="light" className="purchase-btn btn-sm">READ MORE <FaAngleDoubleRight className="mb-1" /></Button>
                         </div>
                     </Col>
-                    <Col lg="6">
-                        <img className="" height="500" src="https://cdn.shopify.com/s/files/1/0564/2705/3216/files/img-1.jpg?v=1633497682" alt="" style={{ borderRadius: '50% 50% 0 0' }} />
+                    <Col lg="6" className="d-flex justify-content-center">
+                        <img className="mt-4" src="https://cdn.shopify.com/s/files/1/0564/2705/3216/files/img-1.jpg?v=1633497682" alt="" style={{ borderRadius: '50% 50% 0 0', width: '85%' }} />
                     </Col>
                 </Row>
             </Container>

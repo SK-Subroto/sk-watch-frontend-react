@@ -13,7 +13,7 @@ const Blog = () => {
             </div>
             <Row xs={1} md={2} lg={3} className="g-4">
                 <Col>
-                    <Card>
+                    <Card className="h-100">
                         <Card.Img variant="top" className="zoom" src="https://cdn.shopify.com/s/files/1/1692/8885/articles/blog4.jpg?v=1485167450" />
                         <Card.Body>
                             <div className="fw-light mb-2">By Richad | October 23, 2021 | 2 Comments</div>
@@ -34,7 +34,7 @@ const Blog = () => {
                     </Card>
                 </Col>
                 <Col>
-                    <Card>
+                    <Card className="h-100">
                         <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/1692/8885/articles/blog12.jpg?v=1485168301" />
                         <Card.Body>
                             <div className="fw-light mb-2">By Bekar | November 6, 2021 | 5 Comments</div>
@@ -55,7 +55,7 @@ const Blog = () => {
                     </Card>
                 </Col>
                 <Col>
-                    <Card>
+                    <Card className="h-100">
                         <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/1692/8885/articles/blog10_518c7ab0-ce3f-4092-a34a-be939cb0b851.jpg?v=1485167950" />
                         <Card.Body>
                             <div className="fw-light mb-2">By Ram M | November 2, 2021 | 2 Comments</div>

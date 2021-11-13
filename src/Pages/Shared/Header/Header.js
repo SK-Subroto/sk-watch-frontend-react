@@ -75,7 +75,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <div style={{ marginTop: 100 }}>
+            <div style={{ marginTop: 95 }}>
 
             </div>
         </>
